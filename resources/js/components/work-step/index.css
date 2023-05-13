@@ -1,0 +1,121 @@
+.work-step{
+    display: flex;
+    min-height: 500px;
+    justify-content: space-between;
+}
+.work-step.mobile{
+    display: none;
+}
+.work-step__left{
+    order: 1;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    padding: 30px 0;
+}
+.work-step__right{
+    order: 3;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    padding:80px 0;
+}
+.work-step__box{
+    border-radius: 20px;
+    background: linear-gradient(90deg, #9ef5ea -2.2%, #6fd4ff 50.14%, #b89cff 100%) fixed top center;
+    display: flex;
+    align-items: center;
+    padding: 10px;
+    transition: box-shadow 0.3s;
+    max-width: 30vw;
+    width: 100%;
+}
+.work-step__box:hover{
+    box-shadow: 0 0 15px 5px #6fd4ff;
+}
+.work-step__box h3{
+    font-size: 20px;
+    padding-bottom: 10px;
+}
+.work-step__icon{
+    padding: 5px 10px;
+
+}
+.work-step__line{
+    order: 2;
+    padding: 0 20px;
+}
+.work-step__points{
+    position: relative;
+    height: 560px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-between;
+    padding-bottom: 5px;
+    margin: 20px 0;
+}
+.work-step__point{
+    width: 9px;
+    height: 9px;
+    background-color: #31B3EB;
+    z-index: 1;
+    border-radius: 50%;
+    transition: box-shadow 0.3s, transform 0.8s;
+}
+.work-step__point.highlight{
+    box-shadow: 0 0 10px 1px #6fd4ff;
+    transform: scale(2);
+}
+.work-step__road{
+    position: absolute;
+    border-right:dashed 2px red;
+    height: 550px;
+    margin: 0 20px 5px 20px;
+}
+@media only screen and (max-width: 1000px) {
+    .work-step__box{
+        max-width: 500px;
+        width: 100%;
+        min-height: 80px;
+    }
+    .work-step__text{
+        width: 100%;
+        text-align: left;
+    }
+    .work-step__box img{
+        width: 50px;
+    }
+    .work-step__box h3{
+        font-size: 16px;
+        padding-bottom: 5px;
+    }
+    .work-step__box p{
+        font-size: 14px;
+    }
+
+    .work-step{
+        width: 100%;
+        justify-content: center;
+        text-align: center;
+        min-height: 1000px;
+    }
+    .work-step__points{
+        height: 1000px;
+    }
+    .work-step__line{
+        height: 1100px;
+        justify-content: space-between;
+    }
+    .work-step__road{
+        height: 1000px;
+        z-index: -1;
+    }
+    .work-step.desktop{
+        display: none;
+    }
+    .work-step.mobile{
+        display: flex;
+    }
+}
+

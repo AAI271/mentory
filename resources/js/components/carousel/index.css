@@ -1,0 +1,200 @@
+.carousel__title{
+    text-align: center;
+    margin-bottom: 30px;
+}
+.viewbox {
+    margin: 0 auto;
+    overflow-x: hidden;
+    width: 100%;
+    border-radius:0 0 5px 5px;
+}
+
+.steps {
+    background-color: white;
+    min-height: 200px;
+    display: flex;
+    width: 400%;
+    position: relative;
+    left: 0;
+    transition: left 0.3s, right 0.3s;
+    overflow: hidden;
+}
+
+.step  {
+    width: 100%;
+    padding: 20px 10px;
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+}
+
+.step p{
+    line-height: 20px;
+    max-width: 415px;
+    width: 100%;
+    color: white;
+}
+
+.step-nav {
+    list-style: none;
+    padding-left: 0;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    max-width: 700px;
+    width: 100%;
+    margin: 0 auto;
+}
+.step-nav .step-item{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 1.5rem;
+    width: 110%;
+    background:transparent;
+    text-align: center;
+    color: #6FD4FFFF;
+    border: 1px solid #6FD4FFFF;
+    font-size: 16px;
+    border-radius: 20px;
+    font-weight: 700;
+    margin-right: 1rem;
+    padding: 5px 10px;
+    transition: background 5s;
+    cursor: pointer;
+}
+.step-item.active {
+    background: linear-gradient(90deg, #65f6e5 -2.2%, #6fd4ff 50.14%, #8250ff 100%) fixed;
+    color: white;
+}
+.step hr{
+    width: 95%;
+    margin: 20px 0;
+}
+
+.step.box{
+    text-align: center;
+    width: 50%;
+    color: white;
+}
+.box ul{
+    padding-left: 15px;
+}
+.box__content{
+    text-align: left;
+    color: white;
+    border-radius: 15px;
+    box-shadow: 0 0  0 2px rgb(255,255,255);
+    padding: 20px;
+    min-height: 300px;
+    margin: 35px 10px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    background: linear-gradient(90deg, #46ffe9 -2.2%, #6fd4ff 50.14%, #8250ff 100%) fixed top center;
+}
+.box__stack-list{
+    display: flex;
+    flex-wrap: wrap;
+    color: white;
+}
+.box__stack{
+    background:none;
+    color: white;
+    padding: 4px 15px;
+    border: 1px solid white;
+    border-radius: 15px;
+    margin: 5px;
+}
+.box__btn{
+    width: 40%;
+    margin: 0 auto;
+    min-width: 200px;
+}
+.box__btn .my-btn{
+    color: #8250FFFF;
+    font-size: 16px;
+    font-weight: 600;
+    border-radius: 20px;
+    padding: 15px 0;
+    background: linear-gradient(90deg, rgba(255, 255, 255, 0.84) -2.2%, rgba(255, 255, 255, 0.2) 50.14%);
+    box-shadow: 0 4px 10px -1px rgba(0, 0, 0, 0.2);
+    transition: box-shadow 0.5s;
+}
+.box__btn .my-btn:hover{
+    box-shadow: none;
+}
+
+.wrap{
+    position: relative;
+    display: flex;
+    align-items: center;
+}
+
+.arrow-icon div{
+    position: absolute;
+    top: 45%;
+    width: 50px;
+    height: 50px;
+    cursor: pointer;
+    transition: transform 0.3s;
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.arrow-icon div:hover{
+    transform: scale(1.1);
+}
+.arrow-icon-left{
+    left: -50px;
+    background-color: #65F6E5FF;
+}
+.arrow-icon-right{
+    right: -50px;
+    background-color: #8250FFFF;
+}
+@media only screen and (max-width: 960px) {
+
+    .step{
+        flex-direction: column;
+        padding: 0;
+    }
+    .step p{
+        max-width: 100%;
+    }
+    .arrow-icon img{
+        width: 25px;
+    }
+    .arrow-icon-left{
+        left: -10px;
+    }
+    .arrow-icon-right{
+        right: -10px;
+    }
+}
+@media only screen and (max-width: 570px) {
+
+    .step-item a{
+        display: none;
+    }
+    .step-nav{
+        width: 50%;
+        position: absolute;
+        left: 0;
+        right: 0;
+        top: 46.5%;
+    }
+    .box__btn{
+        margin-bottom: -42px;
+    }
+    .step-nav .step-item{
+        border-radius: 50%;
+        width: 10px;
+        height: 10px;
+        padding: 0;
+    }
+    .box-lesson{
+        margin-top: 120px;
+    }
+}

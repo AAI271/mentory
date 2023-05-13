@@ -1,0 +1,84 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+html{
+    scroll-behavior: smooth;
+}
+
+body {
+    font-family: 'Sofia Sans', Arial, sans-serif;
+}
+
+section{
+    padding: 50px 0;
+}
+.marginX{
+    max-width: 1200px;
+    width: 90%;
+    margin: 30px auto;
+}
+.main-box{
+    border-radius: 15px;
+}
+h2{
+    font-size: 40px;
+    font-weight: 550;
+    line-height: 50px;
+}
+h3{
+    font-size: 25px;
+}
+.my-input{
+    background: transparent;
+    padding: 20px;
+    border: 2px solid #8F64FF;
+    border-radius: 25px;
+    color: black;
+    width: calc(100% - 43px);
+}
+.my-input:focus{
+    outline: none;
+}
+.my-input::placeholder{
+    color: gray;
+}
+.my-btn{
+    font-family: "Sofia Sans", serif;
+    width: 100%;
+    background: linear-gradient(90deg, #31B3EB 0%, #8F64FF 100%);;
+    border-radius: 30px;
+    color: white;
+    padding: 15px;
+    font-weight: 700;
+    font-size: 20px;
+    border: none;
+    cursor: pointer;
+    box-shadow: 0 4px 10px -1px rgba(0, 0, 0, 0.2);
+    transition: box-shadow 0.5s;
+}
+.my-btn:hover{
+    box-shadow: 0 1px 5px -1px rgba(0, 0, 0, 0.2);
+}
+
+@media only screen and (max-width: 960px) {
+    h2{
+        font-size: 30px;
+        font-weight: 450;
+        line-height: 30px;
+    }
+    h3{
+        font-size: 20px;
+    }
+    .main-box{
+        display: flex;
+        flex-direction: column;
+        justify-content:center ;
+        align-items: center;
+    }
+    .main-box form{
+        width: 100%;
+        padding:40px 0;
+        height: 190px;
+    }
+}

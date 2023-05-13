@@ -1,0 +1,33 @@
+.order{
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    box-shadow: 0 0 26px 1px rgba(0, 0, 0, 0.15);
+    color: black;
+    padding: 30px;
+}
+.order__text{
+    width: 50%;
+    min-width: 370px;
+}
+.order__text h2{
+    padding-bottom: 50px;
+    font-size: 40px;
+    font-weight: 700;
+}
+.order__text p{
+    font-size: 24px;
+    font-weight: 500;
+}
+
+
+@media only screen and (max-width: 960px) {
+    .order{
+        padding: 20px 15px;
+    }
+    .order__text{
+        width: 100%;
+        min-width: 0;
+    }
+
+}
